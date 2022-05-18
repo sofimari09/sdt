@@ -1,10 +1,16 @@
 import React from 'react'
-import {Redirect} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 
-function About() {
-  
+function About()  {
+    let navigate = useNavigate();
   return (
-    <div>IT WORKS! </div>
+      <div>
+    <div>About</div>
+    <button 
+        onClick = {() => {
+            navigate ("/new") ;
+        }}>About</button>
+        </div>
   )
 }
 
